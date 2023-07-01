@@ -1,0 +1,245 @@
+.addEmployee--container
+{   
+    border: 1px solid red;
+    background-color: #ffe390;
+    /* background: url("../assets/background2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height:100vh;
+    width:100vw;
+}
+
+.addEmployee--heading--box
+{   
+    /* border:1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+}
+.addEmployee--heading
+{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.5em;
+}
+
+.addEmployee--content--box
+{   
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:85%;
+    width: 100%;
+}
+
+.addEmployee--content
+{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 85%;
+    padding:1%;
+}
+
+.addEmployee--teamName--form--container
+{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 80%;
+}
+
+.addEmployee--teamName--form
+{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 60%;
+}
+
+.addEmployee--teamName--box
+{
+    /* border: 1px solid black; */
+    box-shadow: rgba(53, 53, 53, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.addEmployee--teamName--input
+{   
+    /* border: 2px solid black; */
+    border:none;
+    background-color: rgb(159, 249, 255);
+    height:100%;
+    width: 90%;
+    padding: 2%;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.addEmployee--teamName--icon--box
+{   
+    background-color: rgb(110, 245, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 10%;
+    font-size: 1.2em;
+}
+
+.addEmployee--options--box
+{   
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    height: 10%;
+    width: 80%;
+    margin: 2% 0 2% 0;
+}
+.addEmployee--options
+{   
+    /* border:1px solid black; */
+    background-color: #4681f4;
+    box-shadow: rgba(53, 53, 53, 0.24) 0px 3px 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 22%;
+
+}
+.addEmployee--options--link
+{
+    color:white;
+    font-size: 1.2em;
+}
+
+.createTask
+{
+    margin-right: 5%;
+}
+
+.addEmployee--addBox
+{   
+    border:1px solid blue;
+    min-height: 60%;
+    width: 70%;
+}
+
+.addEmployee--addBox--heading--box
+{   
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.addEmployee--employee--form--box
+{       
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 85%;
+    width: 100%;
+    padding-top: 2.5%;
+}
+
+.addEmployee--employee--form
+{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height:100%;
+    width: 70%;
+}
+
+.addEmployee-employee--box
+{
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.addEmployee-inputs
+{
+    /* border:1px solid violet; */
+    height:100%;
+    width:45%;
+    margin-left:  4%;
+    padding:2%;
+    font-size: 0.9em;
+}
+
+.addEmployee--icon--container
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 10%;
+}
+
+.addEmployee--addButton--box
+{
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-height: 15%;
+    width: 25%;
+    background-color: #4681f4;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.addEmployee--submitButton--box
+{   
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-height: 15%;
+    width: 25%;
+    margin-top: 3%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
+    
+    /* background-color: #4681f4; */
+    /* color: white; */
+}
+.addEmployee--submitButton
+{
+    height:100%;
+    width:100%;
+    border: none;
+    background-color: #4681f4;
+    color: white;
+
+}
