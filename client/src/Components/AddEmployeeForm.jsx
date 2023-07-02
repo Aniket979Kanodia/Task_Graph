@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil, faTrash } from "@fortawesome/free-solid-svg-icons";
 import "../styles/AddEmployee.css";
 
-const AddEmployeeForm = () => {
+const AddEmployeeForm = (props) => {
+  const navigate = useNavigate();
   const [teamName, setTeamName] = useState("CodeBreakers");
-  const [counter, setCounter] = useState(0);
+  const { handleGenerateGraph } = props;
 
   const [EmployeeArray, setEmployeeArray] = useState();
   const [EmployeeData, setEmployeeData] = useState([]);
 
   const handleSubmit = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
+    // Add EmployeeData Array from Here
+    navigate("/addTaskPage");
   };
 
   const handleChange = (event, key) => {
@@ -30,11 +33,11 @@ const AddEmployeeForm = () => {
 
   const handleDelete = (event, key) => {
     console.log("clicked...", key);
-    setEmployeeArray((DataArray) => {
-      let newArray = DataArray;
-      newArray = newArray.filter((item, index) => index === key);
-      return newArray;
-    });
+    // setEmployeeArray((DataArray) => {
+    //   let newArray = DataArray;
+    //   newArray = newArray.filter((item, index) => index === key);
+    //   return newArray;
+    // });
   };
 
   const handleChange_TeamName = (event) => {
@@ -63,12 +66,12 @@ const AddEmployeeForm = () => {
           className="addEmployee-inputs"
         />
         {
-          <div
-            className="addEmployee--icon--container"
-            onClick={(e) => handleDelete(e, key)}
-          >
-            <FontAwesomeIcon icon={faTrash} />
-          </div>
+          // <div
+          //   className="addEmployee--icon--container"
+          //   onClick={(e) => handleDelete(e, key)}
+          // >
+          //   <FontAwesomeIcon icon={faTrash} />
+          // </div>
         }
       </div>
     );
@@ -85,7 +88,7 @@ const AddEmployeeForm = () => {
   useEffect(() => {
     setEmployeeArray([element({ key: 0 })]);
   }, []);
-  //   console.log(EmployeeData);
+  // console.log(EmployeeData);
 
   return (
     <div className="addEmployee--container">
@@ -114,13 +117,17 @@ const AddEmployeeForm = () => {
           </div>
           <div className="addEmployee--options--box">
             <div className="addEmployee--options createTask">
-              <Link to="/addEmployee" className="addEmployee--options--link">
-                Create Script
+              <Link to="/addTaskPage" className="addEmployee--options--link">
+                Assign Tasks
               </Link>
             </div>
-            <div className="addEmployee--options teamList">
-              <Link to="/addEmployee" className="addEmployee--options--link">
-                Team Members
+            <div className="addEmployee--options">
+              <Link
+                to="/addEmployee"
+                className="addEmployee--options--link genLink"
+                onClick={handleGenerateGraph}
+              >
+                Generate Graph
               </Link>
             </div>
           </div>
@@ -140,9 +147,10 @@ const AddEmployeeForm = () => {
                 </div>
                 <div className="addEmployee--submitButton--box">
                   <input
-                    type="submit"
-                    onSubmit={handleSubmit}
+                    type="button"
+                    onClick={handleSubmit}
                     className="addEmployee--submitButton"
+                    value="Submit"
                   />
                 </div>
               </form>

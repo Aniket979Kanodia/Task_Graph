@@ -1,0 +1,118 @@
+.displayTaskCard--container {
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.displayTaskCard--form--box {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.displayTaskCard--form {
+    /* border: 1px solid blue; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* .displayTaskCard--form--inputs--container {
+    border: 1px solid yellow;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 70%;
+    width: 100%;
+} */
+
+.displayTaskCard--form--inputs {
+    border: 1px solid black;
+    border-radius: 2px;
+    height:100%;
+    /* padding: 0.5%; */
+    padding:1px;
+    margin: 0 5px 0 0.5%;
+}
+
+.displayTaskCard--form--inputs>input,
+.displayTaskCard--form--inputs>select {
+    /* border: 1px solid black; */
+    border: none;
+    height: 100%;
+    width: 100%;
+    /* padding: 10px; */
+    padding-left: 10px;
+}
+
+.displayTaskCard--taskID {
+    width: 15%;
+}
+
+.displayTaskCard--taskName {
+    width: 45%
+}
+
+.displayTaskCard--employeeId {
+    width: 20%;
+}
+.displayTaskCard--priority {
+    width: 10%;
+}
+
+.displayTaskCard--form--inputs--datePicker--box {
+    /* border: 1px solid black; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 10px; */
+    height: 100%;
+    /* width: 80%; */
+}
+
+.displayTaskCard--form--inputs--datePicker {
+    border: none;
+    width: 85%;
+}
+
+/* .displayTaskCard--addButton--box {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 30%;
+    width: 100%;
+    padding-right: 1%;
+} */
+
+.displayTaskCard--Buttons {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 5%;
+    background-color: #042a2b;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-right:0.5%;
+}
+
+.displayTaskCard--Buttons--icon
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1em;
+}
+
