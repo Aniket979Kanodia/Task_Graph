@@ -31,7 +31,7 @@ const InsertTask = (req, res) => {
       req.data.taskName,
       req.data.startDate,
       req.data.endDate,
-      req.data.assignedTo,
+      req.data.employeeId,
       req.data.priority,
       req.data.teamName,
     ],

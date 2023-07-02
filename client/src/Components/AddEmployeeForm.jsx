@@ -6,18 +6,40 @@ import "../styles/AddEmployee.css";
 
 const AddEmployeeForm = (props) => {
   const navigate = useNavigate();
-  const [teamName, setTeamName] = useState("CodeBreakers");
+  const [teamName, setTeamName] = useState("Code Break");
   const { handleGenerateGraph } = props;
 
   const [EmployeeArray, setEmployeeArray] = useState();
   const [EmployeeData, setEmployeeData] = useState([]);
 
-  const handleSubmit = (event) => {
-    // event.preventDefault();
-    // Add EmployeeData Array from Here
-    navigate("/addTaskPage");
-  };
+  // useEffect(() => {
+  //   // insertEmployeeData();
+  // }, [EmployeeData]);
 
+  async function handleSubmit(event) {
+    // event.preventDefault();
+    console.log(EmployeeData);
+    for (let i = 0; i < EmployeeData.length; i++) {
+      const response = await fetch(
+        "http://localhost:3000/employee/insertemployee",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            employeeId: EmployeeData[i].employeeId,
+            employeeName: EmployeeData[i].employeeName,
+            teamName: teamName,
+          }),
+        }
+      );
+      console.log("Hello");
+      const data = await response.json();
+      console.log(data);
+    }
+    navigate("/addTaskPage");
+  }
   const handleChange = (event, key) => {
     const { value, name } = event.target;
     // console.log(name, value, key);
@@ -137,7 +159,7 @@ const AddEmployeeForm = (props) => {
               Add Employees
             </div>
             <div className="addEmployee--employee--form--box">
-              <form action="" className="addEmployee--employee--form">
+              <form className="addEmployee--employee--form">
                 {EmployeeArray}
                 <div
                   onClick={handleAddButton}

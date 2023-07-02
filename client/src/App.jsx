@@ -40,7 +40,12 @@ function App() {
               <AddTasksPage taskData={taskData} setTaskData={setTaskData} />
             }
           ></Route>
-          <Route path="/addEmployee" element={<AddEmployeeForm />}></Route>
+          <Route
+            path="/addEmployee"
+            element={
+              <AddEmployeeForm handleGenerateGraph={handleGenerateGraph} />
+            }
+          ></Route>
           <Route
             path="/addPrerequisites"
             element={
