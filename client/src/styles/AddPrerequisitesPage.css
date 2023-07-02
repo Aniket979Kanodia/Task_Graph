@@ -1,0 +1,114 @@
+.addPrerequisites--container
+{   
+    /* border:1px solid black; */
+    background-color: #fff9de;
+    height:100vh;
+    width:100vw;
+}
+
+.addPrerequisites--heading--box
+{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width:100%;
+    font-size: 1.3em;
+}
+
+.addPrerequisites--content--box
+{
+    /* border: 1px solid black; */
+    display: flex;
+    height: 90%;
+    width: 100%;
+}
+
+.addPrerequisites--addTask--box
+{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 85%;
+    width: 100%;
+    margin-top : 2%
+}
+
+.addPrerequisites--addTask--form--box
+{   
+    /* border: 1px solid blue; */
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    height:40%;
+    width:100%;
+    margin-bottom: 5%;
+}
+
+.addPrerequisites--addTask--form
+{   
+    border:1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95%;
+    width: 50%;
+}
+
+.addPrerequisites--inputs--box
+{
+    /* border:1px solid red; */
+    width: 60%;
+    margin:1%;
+}
+
+.addPrerequisites--inputs--select
+{
+
+}
+
+.addPrerequisites--submit--btn--box {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 15%;
+    margin-top: 1%;
+}
+
+.addPrerequisites--submit--btn {
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: #4681f4;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.addPrerequisites--generateGraph--btn--box {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 15%;
+    
+}
+
+.addPrerequisites--generateGraph--btn {
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: #FF4500;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    font-size: 1em;
+    cursor: pointer;
+}
